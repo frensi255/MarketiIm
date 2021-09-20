@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+/* kodi css per trupin e faqes */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* kodi css per header */
+.header {
+  padding: 20px;
+  text-align: center;
+}
+
+/* kodi css per menune */
+.nav{
+  list-style:none;
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+.nav li{
+  display:inline;
+}
+.nav a{
+  display:inline-block;
+  padding:10px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 28px;
+  font-family: 'Russo One', sans-serif;
+  font-weight: lighter;
+}
+.nav a:hover{
+  background-color: rgba(255, 255, 255, 0.3); 
+  border-radius: 10px;
+  border-bottom: 3px solid black;
+
+}
+.nav a:visited{
+  color: black;
+}
+.nav li a.active{
+  background-color: rgba(255, 255, 255, 0.3); 
+  border-radius: 10px;
+  border-bottom: 3px solid black;
+}
+
+
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 23%;
+}
+.column.side img{
+  border-radius: 10px;
+}
+
+/* Middle column */
+.column.middle {
+  width: 54%;
+}
+.column.middle img{
+  border-radius: 10px;
+}
+.bottomcolumn{
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+.bottomcolumn img{
+  border-radius: 10px;
+}
+
+/* Clear floats after the columns */
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* kodi css per footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+}
+
+/* kodi css per rreth nesh */
+.about-us{
+  padding: 10px;
+  margin: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+}
+.about-us img#i2{
+  margin-left:15px;
+  float: right;
+  width: 250px;
+  height: 250px;
+}
+.about-us #p2{
+  font-size: 20px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  text-align: left;
+  padding: 8px;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Marketi Im </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/login-style.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/index-style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+        
+        <!-- link css footer -->
+        <link rel="stylesheet" type="text/css" href="styles/footer-style.css"/>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/png" href="images/logo.png"/>
+        </head>
+
+<body background="images/bodybackground.png">
+
+<div class="header"> <img src="images/weblogo.png" width="60%" height="150px"> </div>
+
+
+  <ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a class="active" href="about.html">Rreth Nesh</a></li>
+    <!-- butoni per shfaqjen e dritares se loginit-->
+    <li><a onclick="document.getElementById('id1').style.display='block'" style="">Login</a></li>
+  </ul>
+
+  <hr style="width: 35%;border: 1px solid black;">
+  
+
+<!-- kodi i logimit html -->
+<div id="id1" class="modal">
+  <form class="modal-content animate" action = "login.php" method = "post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id1').style.display='none'" class="close" title="Mbyll">&times;</span>
+      <img src="images/user.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <input type="text" placeholder="Email" name="email" required>
+      <input type="password" placeholder="Fjalekalimi" name="encrypted_password" required>
+      <button class="sbcbtn"type="submit">Login</button>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id1');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+<div class="about-us">
+<div>
+    <img id="i2" src="images/logo.png">
+    <br>
+        <h1><b>Tema e Diplomes:</b> Marketi Im</h1>
+        <h3>Abstrakti i Diplomes:</h3>
+    <p id="p2">
+            Është një aplikacion mobile i cili shërben për porositjen dhe blerjen e  produkteve online.<br>
+            Ky aplikacion është një risi e re në vendin tonë, shkurton kohën që ju duhet për të blerë
+            produktet, i lehtë në përdorim për të gjitha moshat. <br>
+            Mjafton vetëm të zgjidhni marketin në zonën tuaj, shtoni në shportë  produktet e dëshiruara, klikoni “Porosit” dhe çdo gjë është gati. <br><br>
+            Teknologjite e perdorura: Android Studio, Visual Studio, Java, CSS, HTML, SQL Query.
+
+           
+<br><hr>
+<table>
+        <tr>
+          <th>Grupi Punes</th>
+          <th>Mentoret</th>
+          <th>Anetar Nderi</th>
+          <th>Drejtor</th>
+        </tr>
+        <tr>
+          <td>Alban XHAFA</td>
+          <td>Enida GJIKA</td>
+          <td>Gerard HAGER</td>
+          <td>Hedie GJONI</td>
+        </tr>
+        <tr>
+          <td>Eljon BASHA</td>
+          <td>Irena STERJO</td>
+        </tr>
+        <tr>
+          <td>Elvi MATA</td>
+       
+        </tr>
+        <tr>
+          <td>Frensi QYRA</td>
+        </tr>
+      </table>
+</p>
+ </div>
+
+
+</div>
+
+
+
+  <footer class="footer">
+
+			<div class="footer-left">
+				<img src="images/logo.png" width="100px" height="100px">
+				<h3>Marketi <span>Im</span></h3>
+
+				<p class="footer-links">
+					<a href="#">Home</a>·<a href="#">Rreth Nesh</a>·<a href="#">Log In</a>
+				</p>
+
+				<p class="footer-company-name">Marketi Im &copy; 2019</p>
+			</div>
+
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Shkolla e Mesme Profesionale<br> TIK "Hermann Gmeiner"</span> Sauk, Tiranë</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+355 68 123 4567</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">marketiim2@gmail.com</a></p>
+				</div>
+			</div>
+
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>Rreth kompanise sonë</span>
+					Marketi Im është një aplikacion mobile i cili shërben për porositjen dhe blerjen e produkteve të një supermarketi online. Ky aplikacion është një risi e re në vendin tonë, shkurton kohën që ju duhet për të blerë produktet, i lehtë në përdorim për të gjitha moshat.
+				</p>
+
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+				</div>
+			</div>
+
+		</footer>
+
+</body>
+</html>
